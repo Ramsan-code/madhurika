@@ -3,23 +3,23 @@ import Link from "next/link";
 
 export default function Identity() {
   return (
-    <main className="min-h-screen w-full flex flex-col relative">
-      <div className="p-4 sm:p-8 pt-24 sm:pt-32">
-        <p className="text-[10px] md:text-xs uppercase tracking-widest mb-4 sm:mb-8">// PAGE 03 - IDENTITY</p>
-        <h2 className="font-display text-[15vw] sm:text-[14vw] uppercase leading-[0.75] tracking-[-0.05em]">Iden-tity</h2>
+    <main className="h-dvh w-full flex flex-col relative overflow-hidden bg-background">
+      <div className="p-4 sm:p-8 pt-16 sm:pt-32 shrink-0">
+        <p className="text-[9px] md:text-xs uppercase tracking-widest mb-2 sm:mb-8 opacity-50">// PAGE 03 - IDENTITY</p>
+        <h2 className="font-display text-[15vw] sm:text-[14vw] uppercase leading-[0.75] tracking-[-0.05em] mb-4">Iden-tity</h2>
       </div>
-      <div className="flex flex-col sm:flex-row flex-1 border-t border-[#111111]">
-         <div className="w-full sm:w-1/2 p-4 sm:p-8 flex flex-col justify-between h-auto min-h-[50vh]">
-           <div className="space-y-6">
-             <p className="text-xl sm:text-2xl leading-relaxed">
+      <div className="flex flex-col sm:flex-row flex-1 border-t border-[#111111]/30 overflow-hidden">
+         <div className="w-full sm:w-1/2 p-4 sm:p-8 flex flex-col justify-between h-[50dvh] sm:h-full overflow-hidden shrink-0">
+           <div className="space-y-4 sm:space-y-6 flex-1 flex flex-col justify-center">
+             <p className="text-lg sm:text-2xl leading-[1.1] sm:leading-relaxed">
                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
              </p>
-             <p className="text-sm opacity-70 border-l border-[#111111] pl-4 max-w-sm">
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+             <p className="text-[11px] sm:text-sm opacity-70 border-l border-[#111111] pl-4 max-w-sm hidden sm:block">
+               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
              </p>
            </div>
            
-           <div className="flex justify-between mt-12 sm:mt-0 font-sans">
+           <div className="flex justify-between mt-4 sm:mt-0 font-sans pb-4 sm:pb-0">
              <Link href="/credentials" className="text-[10px] md:text-xs uppercase tracking-widest hover:line-through inline-flex items-center gap-4 w-max opacity-50">
                <span className="font-display text-lg leading-none">←</span>
                <span>Prev</span>
@@ -30,7 +30,7 @@ export default function Identity() {
              </Link>
            </div>
          </div>
-         <div className="w-full sm:w-1/2 h-[50vh] sm:h-auto min-h-[500px] relative border-t sm:border-t-0 sm:border-l border-[#111111]">
+         <div className="w-full sm:w-1/2 h-[50dvh] sm:h-full relative border-t sm:border-t-0 sm:border-l border-[#111111]/30">
           <Image
             src="/about_photo.png"
             alt="Identity"
