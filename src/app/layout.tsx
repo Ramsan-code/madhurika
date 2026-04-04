@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Archivo_Black, Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import Navbar from "@/components/Navbar";
+import AssistiveBall from "@/components/AssistiveBall";
 import { VisualEditsMessenger } from "orchids-visual-edits";
 
 const archivoBlack = Archivo_Black({
@@ -20,8 +22,6 @@ export const metadata: Metadata = {
   description: "Typographic Brutalism Portfolio",
 };
 
-import Navbar from "@/components/Navbar";
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -35,6 +35,7 @@ export default function RootLayout({
         <Navbar />
 
         {children}
+        <AssistiveBall />
         <VisualEditsMessenger />
       </body>
     </html>
