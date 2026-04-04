@@ -15,7 +15,8 @@ export default function Intro() {
         </div>
         <div className="flex flex-col mt-4 sm:mt-0 mb-4 sm:mb-0">
           <p className="text-base sm:text-lg max-w-lg opacity-70 mb-4 sm:mb-8 line-clamp-4 sm:line-clamp-none leading-[1.3]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+           Motivated and enthusiastic fresher currently pursuing a Higher National Diploma (HND) in Business
+and Management (Hons).Develop professional skills, and contribute positively to organizational success.
           </p>
           <Link href="/credentials" className="text-[11px] md:text-xs uppercase tracking-widest hover:line-through inline-flex items-center gap-4 w-max group">
             <span>Next: Credentials</span>

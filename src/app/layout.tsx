@@ -30,14 +30,14 @@ export default function RootLayout({
         className={`${archivoBlack.variable} ${inter.variable} font-sans antialiased bg-[#F4F4F4] text-[#111111] overflow-x-hidden selection:bg-[#111111] selection:text-[#F4F4F4]`}
       >
         {/* Persistent Header */}
-        <header className="fixed top-0 left-0 w-full p-4 sm:p-8 flex justify-between items-start z-50 mix-blend-difference text-[#F4F4F4] text-xs sm:text-[10px] md:text-sm uppercase tracking-widest font-sans pointer-events-none">
-          <div className="flex flex-col">
+        <header className="fixed top-0 left-0 w-full p-4 sm:p-8 flex justify-between items-start z-50 text-[#111111] text-[10px] md:text-sm uppercase tracking-widest font-medium font-sans pointer-events-none">
+          <div className="flex flex-col opacity-60">
             <span>Madhurika</span>
             <span>Portfolio / '26</span>
           </div>
           <div className="flex flex-col text-right">
-            <span>Sri Lanka</span>
-            <span>HND Business & Mgmt</span>
+            <span className="opacity-60">Sri Lanka</span>
+            <span className="opacity-100 font-bold">HND Business & Mgmt</span>
           </div>
         </header>
 
