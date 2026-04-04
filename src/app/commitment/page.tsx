@@ -79,16 +79,16 @@ export default function Commitment() {
               <p>Loc: Colombo / SL</p>
               <p>Lat: 6.9271 / Lon: 79.8612</p>
             </div>
-            <div className="flex items-center gap-8">
-              <Link href="/capabilities" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-4 w-max opacity-40 group">
-                <span className="font-display text-2xl leading-none transition-transform group-hover:-translate-x-2">←</span>
-                <span>Prev</span>
-              </Link>
-              <Link href="/" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-4 w-max group">
-                <span>Finish</span>
-                <span className="font-display text-2xl leading-none transition-transform group-hover:rotate-180">↺</span>
-              </Link>
-            </div>
+              <div className="flex items-center gap-8">
+                <Link href="/capabilities" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-4 w-max opacity-40 group">
+                  <span className="font-display text-2xl leading-none transition-transform group-hover:-translate-x-2">←</span>
+                  <span>Prev</span>
+                </Link>
+                <Link href="/" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-4 w-max group">
+                  <span>Finish</span>
+                  <span className="font-display text-2xl leading-none transition-transform group-hover:rotate-180">↺</span>
+                </Link>
+              </div>
           </div>
        </div>
 

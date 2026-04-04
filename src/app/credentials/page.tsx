@@ -37,16 +37,16 @@ export default function Credentials() {
             </div>
          </div>
          
-         <div className="flex justify-between mt-4 sm:mt-0 pb-4 sm:pb-0 shrink-0 relative z-20 pt-6">
-            <Link href="/" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-4 w-max opacity-40 group">
-              <span className="font-display text-2xl leading-none transition-transform group-hover:-translate-x-2">←</span>
-              <span>Prev</span>
-            </Link>
-            <Link href="/identity" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-4 w-max group">
-              <span>Next: Skills</span>
-              <span className="font-display text-2xl leading-none transition-transform group-hover:translate-x-2">→</span>
-            </Link>
-          </div>
+            <div className="flex justify-between pb-4 sm:pb-0 shrink-0 relative z-20 pt-6">
+              <Link href="/" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-4 w-max opacity-40 group">
+                <span className="font-display text-2xl leading-none transition-transform group-hover:-translate-x-2">←</span>
+                <span>Prev</span>
+              </Link>
+              <Link href="/identity" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-4 w-max group">
+                <span>Next: Skills</span>
+                <span className="font-display text-2xl leading-none transition-transform group-hover:translate-x-2">→</span>
+              </Link>
+            </div>
        </div>
        <div className="w-full sm:w-1/2 h-[45dvh] sm:h-full relative border-t sm:border-t-0 sm:border-r border-[#111111]">
          <Image

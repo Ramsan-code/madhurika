@@ -41,16 +41,16 @@ export default function Identity() {
               </div>
            </div>
            
-           <div className="flex justify-between mt-4 sm:mt-8 font-sans pb-4 sm:pb-0 shrink-0 border-t border-[#111111]/10 pt-4">
-             <Link href="/credentials" className="text-[10px] md:text-sm uppercase tracking-widest hover:line-through inline-flex items-center gap-4 w-max opacity-50 group">
-               <span className="font-display text-lg leading-none transform group-hover:-translate-x-1 transition-transform">←</span>
-               <span>Prev</span>
-             </Link>
-             <Link href="/capabilities" className="text-[10px] md:text-sm uppercase tracking-widest hover:line-through inline-flex items-center gap-4 w-max group">
-               <span>Next</span>
-               <span className="font-display text-lg leading-none transform group-hover:translate-x-1 transition-transform">→</span>
-             </Link>
-           </div>
+             <div className="flex justify-between pb-4 sm:pb-0 shrink-0 border-t border-[#111111]/10 pt-4">
+               <Link href="/credentials" className="text-[10px] md:text-sm uppercase tracking-widest hover:line-through inline-flex items-center gap-4 w-max opacity-50 group">
+                 <span className="font-display text-lg leading-none transform group-hover:-translate-x-1 transition-transform">←</span>
+                 <span>Prev</span>
+               </Link>
+               <Link href="/capabilities" className="text-[10px] md:text-sm uppercase tracking-widest hover:line-through inline-flex items-center gap-4 w-max group">
+                 <span>Next</span>
+                 <span className="font-display text-lg leading-none transform group-hover:translate-x-1 transition-transform">→</span>
+               </Link>
+             </div>
          </div>
          <div className="w-full sm:w-1/2 h-[45dvh] sm:h-full relative border-t sm:border-t-0 sm:border-l border-[#111111]/30">
           <Image

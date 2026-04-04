@@ -20,6 +20,8 @@ export const metadata: Metadata = {
   description: "Typographic Brutalism Portfolio",
 };
 
+import Navbar from "@/components/Navbar";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -30,17 +32,7 @@ export default function RootLayout({
       <body
         className={`${archivoBlack.variable} ${inter.variable} font-sans antialiased bg-[#F4F4F4] text-[#111111] overflow-x-hidden selection:bg-[#111111] selection:text-[#F4F4F4]`}
       >
-        {/* Persistent Header */}
-        <header className="fixed top-0 left-0 w-full p-4 sm:p-8 flex justify-between items-start z-50 text-[#111111] text-[10px] md:text-sm uppercase tracking-widest font-medium font-sans pointer-events-none">
-          <Link href="/" className="flex flex-col opacity-60 pointer-events-auto hover:opacity-100 transition-opacity group">
-            <span className="group-hover:tracking-widest transition-all duration-300">Madhurika</span>
-            <span className="group-hover:italic transition-all">Portfolio / '26</span>
-          </Link>
-          <div className="flex flex-col text-right">
-            <span className="opacity-60">Sri Lanka</span>
-            <span className="opacity-100 font-bold">HND Business & Mgmt</span>
-          </div>
-        </header>
+        <Navbar />
 
         {children}
         <VisualEditsMessenger />

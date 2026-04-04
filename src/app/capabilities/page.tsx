@@ -45,16 +45,16 @@ export default function Capabilities() {
                 </div>
             </div>
  
-            <div className="flex justify-between mt-4 sm:mt-12 font-sans pb-4 sm:pb-0 shrink-0 border-t-2 border-[#111111] pt-6 relative z-20">
-              <Link href="/identity" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-6 w-max opacity-40 group">
-                <span className="font-display text-2xl leading-none transition-transform group-hover:-translate-x-2">←</span>
-                <span>Skills / 03</span>
-              </Link>
-              <Link href="/commitment" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-6 w-max group">
-                <span>Social/ 05</span>
-                <span className="font-display text-2xl leading-none transition-transform group-hover:translate-x-2">→</span>
-              </Link>
-            </div>
+              <div className="flex justify-between pb-4 sm:pb-0 shrink-0 relative z-20 pt-6 border-t-2 border-[#111111]">
+                <Link href="/identity" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-6 w-max opacity-40 group">
+                  <span className="font-display text-2xl leading-none transition-transform group-hover:-translate-x-2">←</span>
+                  <span>Skills / 03</span>
+                </Link>
+                <Link href="/commitment" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-6 w-max group">
+                  <span>Social/ 05</span>
+                  <span className="font-display text-2xl leading-none transition-transform group-hover:translate-x-2">→</span>
+                </Link>
+              </div>
         </div>
      </main>
   );
