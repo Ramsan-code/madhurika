@@ -9,7 +9,7 @@ export default function Credentials() {
             <p className="text-[10px] md:text-xs uppercase tracking-widest mb-4 sm:mb-8 opacity-50 px-0.5">// PAGE 02 - CREDENTIALS</p>
             <div className="flex flex-col gap-4 sm:gap-12">
               <div className="border-b border-[#111111]/30 pb-3 sm:pb-8">
-                <h2 className="font-display text-4xl sm:text-5xl uppercase leading-[0.85] tracking-[-0.05em] mb-1 sm:mb-4 hyphens-auto break-words">HND Business <br/> & Mgmt</h2>
+                <h2 className="font-display text-4xl sm:text-5xl uppercase leading-[0.85] tracking-[-0.05em] mb-1 sm:mb-4 hyphens-auto break-words">HND Business <br/> & Management</h2>
                 <div className="text-xs md:text-sm uppercase tracking-widest flex justify-between gap-4 opacity-80">
                   <span>ESOFT Campus</span>
                   <span className="text-right">Ongoing</span>
