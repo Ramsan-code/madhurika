@@ -25,15 +25,6 @@ export default function Navbar() {
         <span className="group-hover:italic transition-all">Portfolio / '26</span>
       </Link>
       
-      {/* Brand New Dual-Direction Swipe Button */}
-      <div className="absolute top-4 sm:top-7 left-1/2 -translate-x-1/2 w-full max-w-[180px] sm:max-w-[300px]">
-        <DualSwipeButton 
-          prevHref={currentPage.prev}
-          nextHref={currentPage.next}
-          className="h-9 sm:h-12 border-[#111111]/10 bg-white/50 backdrop-blur-xl rounded-full shadow-lg"
-        />
-      </div>
-
       <div className="flex flex-col text-right relative z-50">
         <span className="opacity-40">{currentPage.label}</span>
         <span className="opacity-60 text-[8px] sm:text-[11px]">Sri Lanka // 79.86E</span>

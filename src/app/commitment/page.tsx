@@ -47,12 +47,7 @@ export default function Commitment() {
                   </p>
                 </div>
               </div>
-              <div className="border-t border-[#111111]/30 pt-4">
-                 <p className="text-[14px] sm:text-lg lg:text-xl font-display uppercase leading-tight mb-1 tracking-tight">Digital Advocacy</p>
-                 <p className="text-[9px] sm:text-[10px] lg:text-[13px] opacity-70 leading-relaxed font-sans max-w-lg">
-                  I don’t just consume trends; I actively shape conversations through original content, turning complex social issues into engaging narratives that drive real-world change.
-                </p>
-              </div>
+
 
                <div className="border-t border-[#111111]/30 pt-4 border-b border-[#111111]/30 pb-4">
                   <p className="text-[9px] uppercase font-bold tracking-widest opacity-40 mb-4 font-mono">// CONNECT_ED</p>
