@@ -29,10 +29,6 @@ export default function Commitment() {
 
   return (
     <main className="h-dvh w-full flex flex-col sm:flex-row relative overflow-hidden bg-background select-none">
-       {/* Background Watermark */}
-       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40vw] font-display uppercase leading-none tracking-tighter opacity-[0.03] pointer-events-none z-0">
-         05
-       </div>
 
       <div className="w-full sm:w-1/2 p-4 sm:p-6 lg:p-8 pt-10 sm:pt-24 lg:pt-32 flex flex-col justify-between h-[60dvh] sm:h-full overflow-hidden shrink-0 relative z-10 bg-white/10 backdrop-blur-sm">
          <div className="flex-1 flex flex-col justify-center pr-2 no-scrollbar">

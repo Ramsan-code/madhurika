@@ -4,10 +4,6 @@ import Image from "next/image";
 export default function Capabilities() {
   return (
     <main className="h-dvh w-full flex flex-col relative pt-12 sm:pt-24 lg:pt-32 overflow-hidden bg-background select-none">
-       {/* Background Watermark */}
-       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40vw] font-display uppercase leading-none tracking-tighter opacity-[0.03] pointer-events-none z-0">
-         04
-       </div>
 
        <div className="p-4 sm:p-8 flex flex-col flex-1 justify-between overflow-hidden relative z-10">
             <div className="flex-1 flex flex-col justify-center min-h-0">

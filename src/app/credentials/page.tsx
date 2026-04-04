@@ -4,10 +4,6 @@ import Link from "next/link";
 export default function Credentials() {
   return (
     <main className="h-dvh w-full flex flex-col sm:flex-row-reverse relative overflow-hidden bg-background">
-       {/* Background Watermark */}
-       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[45vw] font-display uppercase leading-none tracking-tighter opacity-[0.03] pointer-events-none z-0">
-         02
-       </div>
 
       <div className="w-full sm:w-1/2 p-4 sm:p-8 pt-12 sm:pt-24 lg:pt-32 flex flex-col justify-between h-[60dvh] sm:h-full overflow-hidden shrink-0 relative z-10 bg-white/10 backdrop-blur-sm sm:backdrop-blur-none">
          <div className="flex-1 flex flex-col justify-center max-w-xl mx-auto sm:mx-0 w-full px-0.5">

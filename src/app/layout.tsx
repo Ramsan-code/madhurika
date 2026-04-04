@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Archivo_Black, Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 import { VisualEditsMessenger } from "orchids-visual-edits";
 
 const archivoBlack = Archivo_Black({
@@ -31,10 +32,10 @@ export default function RootLayout({
       >
         {/* Persistent Header */}
         <header className="fixed top-0 left-0 w-full p-4 sm:p-8 flex justify-between items-start z-50 text-[#111111] text-[10px] md:text-sm uppercase tracking-widest font-medium font-sans pointer-events-none">
-          <div className="flex flex-col opacity-60">
-            <span>Madhurika</span>
-            <span>Portfolio / '26</span>
-          </div>
+          <Link href="/" className="flex flex-col opacity-60 pointer-events-auto hover:opacity-100 transition-opacity group">
+            <span className="group-hover:tracking-widest transition-all duration-300">Madhurika</span>
+            <span className="group-hover:italic transition-all">Portfolio / '26</span>
+          </Link>
           <div className="flex flex-col text-right">
             <span className="opacity-60">Sri Lanka</span>
             <span className="opacity-100 font-bold">HND Business & Mgmt</span>
