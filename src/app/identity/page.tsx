@@ -36,7 +36,7 @@ export default function Identity() {
               <div className="space-y-2 sm:space-y-4">
                 <p className="text-[9px] sm:text-[10px] uppercase tracking-widest opacity-40">// SOFT SKILLS</p>
                 <p className="text-[11px] sm:text-sm lg:text-base opacity-70 leading-tight sm:leading-relaxed max-w-sm line-clamp-3 sm:line-clamp-none">
-                  Trying creative ideas, building auditions interaction, inclusive thinking ideas, social media branding, confidence prompting, and timeline management for NewBorn Cinema.
+                  Trying Creative Ideas, Building Auditions Interaction, Inclusive Thinking Ideas, Social Media Branding, Confidence Prompting, and Timeline Management For NewBorn Cinema.
                 </p>
               </div>
            </div>
