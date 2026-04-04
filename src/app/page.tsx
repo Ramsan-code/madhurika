@@ -18,6 +18,22 @@ export default function Intro() {
            Motivated and enthusiastic fresher currently pursuing a Higher National Diploma (HND) in Business
 and Management (Hons).Develop professional skills, and contribute positively to NewBorn Cinema success.
           </p>
+          <div className="flex flex-wrap gap-4 items-center mb-8 border-t border-[#111111]/10 pt-6">
+            <p className="text-[9px] uppercase font-bold tracking-widest opacity-40 w-full mb-1 font-mono">// CONNECT_ED</p>
+            <a href="mailto:madhurika573@gmail.com" className="group/icon relative w-10 h-10 flex items-center justify-center transition-all duration-500">
+              <div className="absolute inset-0 bg-[#3b82f6] rounded-full scale-75 group-hover/icon:scale-100 group-hover/icon:rotate-12 transition-all duration-500 opacity-20 group-hover/icon:opacity-100"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="relative z-10 text-[#111111] group-hover/icon:text-white transition-colors"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/madhu-rika-1801aa205/" target="_blank" rel="noopener noreferrer" className="group/icon relative w-10 h-10 flex items-center justify-center transition-all duration-500">
+              <div className="absolute inset-0 bg-[#3b82f6] rounded-full scale-75 group-hover/icon:scale-100 group-hover/icon:-rotate-12 transition-all duration-500 opacity-20 group-hover/icon:opacity-100"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="relative z-10 text-[#111111] group-hover/icon:text-white transition-colors"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" className="group/icon relative w-10 h-10 flex items-center justify-center transition-all duration-500">
+              <div className="absolute inset-0 bg-[#3b82f6] rounded-full scale-75 group-hover/icon:scale-100 group-hover/icon:rotate-12 transition-all duration-500 opacity-10 group-hover/icon:opacity-60"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="relative z-10 text-[#111111]/30 group-hover/icon:text-[#111111] transition-colors"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+          </div>
+
           <Link href="/credentials" className="text-[11px] md:text-xs uppercase tracking-widest hover:line-through inline-flex items-center gap-4 w-max group mb-8">
             <span>Next: Education</span>
             <span className="font-display text-lg leading-none transform group-hover:translate-x-1 transition-transform">→</span>
