@@ -1,32 +1,62 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Capabilities() {
   return (
-    <main className="h-dvh w-full flex flex-col relative pt-12 sm:pt-24 lg:pt-32 overflow-hidden bg-background">
-       <div className="p-4 sm:p-8 flex flex-col flex-1 justify-between overflow-hidden">
-            <div className="flex-1 flex flex-col justify-center overflow-y-auto pr-2">
-                <p className="text-[10px] md:text-xs uppercase tracking-widest mb-4 sm:mb-6 opacity-50 shrink-0 px-0.5">// PAGE 04 - CAPABILITIES</p>
-                <div className="grid grid-cols-2 gap-x-4 sm:gap-x-12 gap-y-4 sm:gap-y-8 lg:gap-y-12">
+    <main className="h-dvh w-full flex flex-col relative pt-12 sm:pt-24 lg:pt-32 overflow-hidden bg-background select-none">
+       {/* Background Watermark */}
+       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40vw] font-display uppercase leading-none tracking-tighter opacity-[0.03] pointer-events-none z-0">
+         04
+       </div>
+
+       <div className="p-4 sm:p-8 flex flex-col flex-1 justify-between overflow-hidden relative z-10">
+            <div className="flex-1 flex flex-col justify-center min-h-0">
+                <div className="mb-4 sm:mb-8 border-b-2 border-[#111111] pb-2 sm:pb-4 group">
+                  <p className="text-[10px] md:text-xs uppercase tracking-[0.2em] opacity-40 mb-1">// PAGE 04</p>
+                  <h2 className="font-display text-[12vw] sm:text-[9vw] uppercase leading-[0.75] tracking-[-0.05em] group-hover:italic transition-all">Interests</h2>
+                </div>
+
+                <div className="grid grid-cols-2 lg:grid-cols-3 border-l border-[#111111]/30">
                   {[
-                    "Team Coord", "Time Mgmt", "Creativity", "Social Media", 
-                    "Content Creatn", "Email Mrktg", "Risk Mgmt", "Problem Solving"
-                  ].map((skill, index) => (
-                     <div key={index} className="flex flex-col border-t border-[#111111]/30 pt-2 sm:pt-4 w-full">
-                       <h3 className="font-display text-2xl sm:text-3xl lg:text-4xl uppercase leading-[0.85] tracking-[-0.04em] mb-1 sm:mb-2 break-words">{skill}</h3>
-                       <p className="text-[11px] md:text-xs opacity-70 max-w-sm hidden lg:block line-clamp-1">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    { title: "Psycho thrilling movies", desc: "Cinematic depth and complex psychological film arcs.", img: "/interests/thriller.png" },
+                    { title: "Photography", desc: "Minimalist analog perspectives and street photography.", img: "/interests/photography.png" },
+                    { title: " Hobbies in hand crafts ", desc: "The tangible process of hand crafts and sculpture.", img: "/interests/crafts.png" },
+                    { title: "Reading Books", desc: "Curated reading lists focused on world philosophy.", img: "/interests/reading.png" },
+                    { title: "Intrest in world news", desc: "Continuous monitoring of world affairs and trends.", img: "/interests/news.png" },
+                    { title: "New Skillsets", desc: "The perpetual cycle of technological acquisition.", img: "/interests/learning.png" }
+                  ].map((interest, index) => (
+                     <div key={index} className="flex flex-col border-r border-b border-[#111111]/30 p-2 sm:p-6 lg:p-8 group hover:bg-[#111111] transition-all duration-700 cursor-crosshair h-full min-h-[120px] sm:min-h-[160px] lg:min-h-[200px] overflow-hidden">
+                       <div className="flex justify-between items-start mb-1 sm:mb-4">
+                         <span className="text-[9px] font-mono opacity-30 group-hover:opacity-100 group-hover:text-white transition-all">0{index + 1}</span>
+                         <div className="w-full h-20 sm:h-36 lg:h-48 relative overflow-hidden grayscale group-hover:grayscale-0 group-hover:scale-105 group-hover:-rotate-2 transition-all duration-700 border-2 border-[#111111]/10 bg-zinc-200 group-hover:shadow-[8px_8px_0px_white]">
+                           <Image 
+                              src={interest.img} 
+                              alt={interest.title} 
+                              fill 
+                              className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:sepia group-hover:hue-rotate-[200deg] group-hover:contrast-125" 
+                           />
+                         </div>
+                       </div>
+                       
+                       <div className="mt-auto transition-transform duration-500 group-hover:translate-x-1">
+                         <h3 className="font-display text-[10px] sm:text-lg lg:text-xl uppercase leading-none tracking-tight mb-1 group-hover:text-white group-hover:italic transition-all duration-500 whitespace-nowrap overflow-hidden text-ellipsis">{interest.title}</h3>
+                         <p className="text-[7px] md:text-[10px] opacity-50 group-hover:opacity-80 group-hover:text-white line-clamp-1 leading-none sm:leading-relaxed">
+                           {interest.desc}
+                         </p>
+                       </div>
                      </div>
                   ))}
                 </div>
             </div>
  
-            <div className="flex justify-between mt-4 sm:mt-6 font-sans pb-4 sm:pb-0 shrink-0">
-              <Link href="/identity" className="text-xs md:text-sm uppercase tracking-widest hover:line-through inline-flex items-center gap-4 w-max opacity-50 group">
-                <span className="font-display text-lg leading-none transform group-hover:-translate-x-1 transition-transform">←</span>
-                <span>Prev</span>
+            <div className="flex justify-between mt-4 sm:mt-12 font-sans pb-4 sm:pb-0 shrink-0 border-t-2 border-[#111111] pt-6 relative z-20">
+              <Link href="/identity" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-6 w-max opacity-40 group">
+                <span className="font-display text-2xl leading-none transition-transform group-hover:-translate-x-2">←</span>
+                <span>Skills / 03</span>
               </Link>
-              <Link href="/commitment" className="text-xs md:text-sm uppercase tracking-widest hover:line-through inline-flex items-center gap-4 w-max group">
-                <span>Next: Commitment</span>
-                <span className="font-display text-lg leading-none transform group-hover:translate-x-1 transition-transform">→</span>
+              <Link href="/commitment" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-6 w-max group">
+                <span>Social/ 05</span>
+                <span className="font-display text-2xl leading-none transition-transform group-hover:translate-x-2">→</span>
               </Link>
             </div>
         </div>
