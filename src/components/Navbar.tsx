@@ -9,11 +9,11 @@ export default function Navbar() {
 
   // Define pagination map with both directions
   const pageMap: Record<string, { prev: string; next: string; label: string }> = {
-    "/": { prev: "/commitment", next: "/credentials", label: "01 // Intro" },
-    "/credentials": { prev: "/", next: "/identity", label: "02 // Education" },
-    "/identity": { prev: "/credentials", next: "/capabilities", label: "03 // Skills" },
-    "/capabilities": { prev: "/identity", next: "/commitment", label: "04 // Interests" },
-    "/commitment": { prev: "/capabilities", next: "/", label: "05 // Social" },
+    "/": { prev: "/social", next: "/education", label: "01 // Intro" },
+    "/education": { prev: "/", next: "/skills", label: "02 // Education" },
+    "/skills": { prev: "/education", next: "/interests", label: "03 // Skills" },
+    "/interests": { prev: "/skills", next: "/social", label: "04 // Interests" },
+    "/social": { prev: "/interests", next: "/", label: "05 // Social" },
   };
 
   const currentPage = pageMap[pathname] || pageMap["/"];

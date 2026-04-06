@@ -13,14 +13,14 @@ export default function AssistiveBall() {
 
   // Pagination logic
   const pageMap: Record<string, string> = {
-    "/": "/credentials",
-    "/credentials": "/identity",
-    "/identity": "/capabilities",
-    "/capabilities": "/commitment",
-    "/commitment": "/",
+    "/": "/education",
+    "/education": "/skills",
+    "/skills": "/interests",
+    "/interests": "/social",
+    "/social": "/",
   };
 
-  const nextHref = pageMap[pathname] || "/credentials";
+  const nextHref = pageMap[pathname] || "/education";
 
   // Position logic (for draggability/floating)
   const x = useMotionValue(0);

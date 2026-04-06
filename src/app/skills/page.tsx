@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Identity() {
+export default function Skills() {
   return (
     <main className="h-dvh w-full flex flex-col relative overflow-hidden bg-background">
       <div className="p-4 sm:p-8 pt-12 sm:pt-32 shrink-0">
@@ -42,11 +42,11 @@ export default function Identity() {
           </div>
 
           <div className="flex justify-between pb-4 sm:pb-0 shrink-0 border-t border-[#111111]/10 pt-4">
-            <Link href="/credentials" className="text-[10px] md:text-sm uppercase tracking-widest hover:line-through inline-flex items-center gap-4 w-max opacity-50 group">
+            <Link href="/education" className="text-[10px] md:text-sm uppercase tracking-widest hover:line-through inline-flex items-center gap-4 w-max opacity-50 group">
               <span className="font-display text-lg leading-none transform group-hover:-translate-x-1 transition-transform">←</span>
               <span>Prev</span>
             </Link>
-            <Link href="/capabilities" className="text-[10px] md:text-sm uppercase tracking-widest hover:line-through inline-flex items-center gap-4 w-max group">
+            <Link href="/interests" className="text-[10px] md:text-sm uppercase tracking-widest hover:line-through inline-flex items-center gap-4 w-max group">
               <span>Next</span>
               <span className="font-display text-lg leading-none transform group-hover:translate-x-1 transition-transform">→</span>
             </Link>
@@ -55,7 +55,7 @@ export default function Identity() {
         <div className="w-full sm:w-1/2 h-[45dvh] sm:h-full relative border-t sm:border-t-0 sm:border-l border-[#111111]/30">
           <Image
             src="/about_photo.png"
-            alt="Identity"
+            alt="Skills"
             fill
             className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
             priority

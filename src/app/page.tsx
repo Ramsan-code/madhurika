@@ -33,7 +33,7 @@ export default function Intro() {
             </a>
           </div>
 
-          <Link href="/credentials" className="text-[11px] md:text-xs uppercase tracking-widest hover:line-through inline-flex items-center gap-4 w-max group mb-8">
+          <Link href="/education" className="text-[11px] md:text-xs uppercase tracking-widest hover:line-through inline-flex items-center gap-4 w-max group mb-8">
             <span>Next: Education</span>
             <span className="font-display text-lg leading-none transform group-hover:translate-x-1 transition-transform">→</span>
           </Link>

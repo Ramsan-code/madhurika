@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Credentials() {
+export default function Education() {
   return (
     <main className="h-dvh w-full flex flex-col sm:flex-row-reverse relative overflow-hidden bg-background">
 
@@ -42,7 +42,7 @@ export default function Credentials() {
                 <span className="font-display text-2xl leading-none transition-transform group-hover:-translate-x-2">←</span>
                 <span>Prev</span>
               </Link>
-              <Link href="/identity" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-4 w-max group">
+              <Link href="/skills" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-4 w-max group">
                 <span>Next: Skills</span>
                 <span className="font-display text-2xl leading-none transition-transform group-hover:translate-x-2">→</span>
               </Link>
@@ -51,7 +51,7 @@ export default function Credentials() {
        <div className="w-full sm:w-1/2 h-[45dvh] sm:h-full relative border-t sm:border-t-0 sm:border-r border-[#111111]">
          <Image
            src="/education_photo.png"
-           alt="Credentials"
+           alt="Education"
            fill
            className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
            priority

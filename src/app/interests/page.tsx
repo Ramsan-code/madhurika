@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Capabilities() {
+export default function Interests() {
   return (
     <main className="h-dvh w-full flex flex-col relative pt-12 sm:pt-24 lg:pt-32 overflow-hidden bg-background select-none">
 
@@ -46,11 +46,11 @@ export default function Capabilities() {
             </div>
  
               <div className="flex justify-between pb-4 sm:pb-0 shrink-0 relative z-20 pt-6 border-t-2 border-[#111111]">
-                <Link href="/identity" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-6 w-max opacity-40 group">
+                <Link href="/skills" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-6 w-max opacity-40 group">
                   <span className="font-display text-2xl leading-none transition-transform group-hover:-translate-x-2">←</span>
                   <span>Skills / 03</span>
                 </Link>
-                <Link href="/commitment" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-6 w-max group">
+                <Link href="/social" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-6 w-max group">
                   <span>Social/ 05</span>
                   <span className="font-display text-2xl leading-none transition-transform group-hover:translate-x-2">→</span>
                 </Link>

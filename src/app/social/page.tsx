@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import Link from "next/link";
 import { sendEmailAction } from "@/app/actions/email";
 
-export default function Commitment() {
+export default function Social() {
   const formRef = useRef<HTMLFormElement>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -64,7 +64,7 @@ export default function Commitment() {
               <p>Lat: 6.9271 / Lon: 79.8612</p>
             </div>
               <div className="flex items-center gap-8">
-                <Link href="/capabilities" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-4 w-max opacity-40 group">
+                <Link href="/interests" className="text-xs md:text-[11px] uppercase tracking-[0.2em] font-black hover:line-through inline-flex items-center gap-4 w-max opacity-40 group">
                   <span className="font-display text-2xl leading-none transition-transform group-hover:-translate-x-2">←</span>
                   <span>Prev</span>
                 </Link>
