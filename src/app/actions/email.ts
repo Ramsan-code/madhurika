@@ -17,6 +17,7 @@ export async function sendEmailAction(formData: FormData) {
     const { data, error } = await resend.emails.send({
       from: 'Contact Form <onboarding@resend.dev>', // You should update this to your verified domain later
       to: ['madhurika573@gmail.com'], // The recipient email from the original code
+      replyTo: email, // This allows you to reply directly to the person who sent the message
       subject: `New Contact Form Submission from ${name}`,
       text: `
         Name: ${name}
