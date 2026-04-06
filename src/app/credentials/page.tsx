@@ -21,10 +21,10 @@ export default function Credentials() {
                 </div>
               </div>
               <div className="border-b border-[#111111]/30 pb-2 sm:pb-4">
-                <h3 className="font-display text-2xl sm:text-3xl lg:text-4xl uppercase leading-[0.85] tracking-tight mb-1">Advanced <br className="lg:hidden"/> Level</h3>
+                <h3 className="font-display text-2xl sm:text-3xl lg:text-4xl uppercase leading-[0.85] tracking-tight mb-1">Advanced <br className="lg:hidden"/> Level (+2)</h3>
                 <div className="text-[9px] sm:text-[11px] uppercase tracking-widest flex justify-between gap-4 opacity-60">
                   <span>Commerce</span>
-                  <span className="font-black text-right">Total: 487</span>
+                  <span className="font-black text-right">Total:487/600</span>
                 </div>
               </div>
               <div className="border-b border-[#111111]/30 pb-2 sm:pb-4">
