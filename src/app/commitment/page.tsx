@@ -1,30 +1,35 @@
 'use client';
 import { useRef, useState } from "react";
 import Link from "next/link";
-import emailjs from '@emailjs/browser';
+import { sendEmailAction } from "@/app/actions/email";
 
 export default function Commitment() {
   const formRef = useRef<HTMLFormElement>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-  const sendEmail = (e: React.FormEvent) => {
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!formRef.current) return;
 
     setIsSubmitting(true);
-    // Note: User will need to replace these with their own EmailJS IDs in environment variables later
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formRef.current, 'YOUR_PUBLIC_KEY')
-      .then(() => {
+    const formData = new FormData(formRef.current);
+    
+    try {
+      const result = await sendEmailAction(formData);
+      if (result.success) {
         setStatus('success');
         formRef.current?.reset();
-      }, () => {
+      } else {
         setStatus('error');
-      })
-      .finally(() => {
-        setIsSubmitting(false);
-        setTimeout(() => setStatus('idle'), 5000);
-      });
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus('error');
+    } finally {
+      setIsSubmitting(false);
+      setTimeout(() => setStatus('idle'), 5000);
+    }
   };
 
   return (
