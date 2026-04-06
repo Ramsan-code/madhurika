@@ -28,7 +28,7 @@ export default function Navbar() {
       <div className="flex flex-col text-right relative z-50">
         <span className="opacity-40">{currentPage.label}</span>
         <span className="opacity-60 text-[8px] sm:text-[11px]">Sri Lanka // 79.86E</span>
-        <span className="opacity-100 font-bold block mt-1">HND Business & Mgmt</span>
+        <span className="opacity-100 font-bold block mt-1">B.Tech & Business Management HND</span>
       </div>
     </header>
   );

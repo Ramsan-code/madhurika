@@ -15,7 +15,7 @@ export default function Intro() {
         </div>
         <div className="flex flex-col mt-4 sm:mt-12 mb-4 sm:mb-0">
           <p className="text-lg sm:text-2xl lg:text-3xl max-w-xl font-medium opacity-90 mb-6 sm:mb-10 line-clamp-4 sm:line-clamp-none leading-[1.2] tracking-tight">
-           Motivated and enthusiastic fresher currently pursuing a HND Business & Management (Hons). Develop professional skills, and contribute positively to NewBorn Cinema success.
+           Motivated and enthusiastic fresher currently pursuing a B.Tech & Business Management HND (Hons). Develop professional skills, and contribute positively to NewBorn Cinema success.
           </p>
           <div className="flex flex-wrap gap-4 items-center mb-8 border-t border-[#111111]/10 pt-6">
             <p className="text-[9px] uppercase font-bold tracking-widest opacity-40 w-full mb-1 font-mono">// CONNECT_ED</p>
